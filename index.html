@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>AI in Mortgages</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1>Data Science Ethics: <br>AI in Morgatges</h1>
+						<p>Through AI, our proposed data science effort is able to determine whether
+						to accept applicants for mortgages in a fair and ethical manner.</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#first">Collection & Measurement</a></li>
+							<li><a href="#second">Collection & Measurement Concerns</a></li>
+							<li><a href="#third">Data Analysis/Modeling Concern</a></li>
+							<li><a href="#fourth">Algorithm Output</a></li>
+							<li><a href="#fifth">Increased Justice</a></li>
+							<li><a href="#sixth">Model Revision</a></li>
+							<li><a href="#seventh">Considerations</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Introduction</h2>
+										</header>
+										<p>Determining whether an applicant should be granted a morgatage is a complicated process
+										that can be quite risky. Typically, there are a multitude of factors to determine whether an applicant is capable of repaying a home loan and whether to be accepted. Through our proposed data science effort, AI is able to be used to determine whether or not to approve an applicants in a more fair an efficient manner.</p>
+
+									</div>
+
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Collection and Measurement System</h2>
+								</header>
+								<p>
+									The <b>data collection</b> system is a two part system which collects the current applicant's data with consent and then stores it in a databased. This data from previous home loan applicants can then be used to train a model in identifying acceptable candidate profiles for home loans. By then comparing the current applicant, an overall risk score can be generated which the lender can then choose whether or not to accept the applicant. Furthermore, the system can also then generate a report for the borrower and see which factors improved their risk score and which of them harmed it. Factors which are to be collected would be the standards in the industry including: credit score, income, debt-to-income ratios, amount to be borrowed, down payment, etc. Outside of simply information about the applicant, information about the property that is to be purchased such as location and details about the neighborhood would also be collected.
+
+									<br><br><b>Measurement</b> would use the collected factors and run them through the model and assess the applicant risk based on the historical data. By utilizing the historical data along with outcomes of whether or not the previous applicants defaulted on their home loans, we are able to accurately predict the risk of future applicants. Each of the factors collected can be measured on a scale of 1-10 with 1 being low risk and 10 being high risk. By combining these into a single score with relevant weighting, an overall score can be devised to determine a final decision.
+								</p>
+
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1 fa-box"></span>
+										<h3>Collection</h3>
+										<p>Data is collected from applicants with consent to train an acceptable risk AI model</p>
+									</li>
+									<li>
+										<span class="icon solid major style3 fa-ruler"></span>
+										<h3>Measurement</h3>
+										<p>The applicant is compared to historical data to measure their risk of default/chance of acceptance</p>
+									</li>
+
+								</ul>
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main">
+								<header class="major">
+									<h2>Collection and Measurement Ethical Concerns</h2>
+								</header>
+
+								<ol>
+									<li><b>Data Storage</b>
+										<p>One potential ethical concern is the storage of historical data when building our model. The model itself relies on previous applicants and their personal data to be collected and stored. As a result there may be ethical concerns behind individuals who may not necesarrily want their private financial data to be stored by our model.
+										<br><br>The solution behind this concern would be devising a system of consent which clearly defines how applicant information is to be stored and used. Furthermore, there needs to be an option for applicants to opt-out of having their data stored and used for our model if they do not wish to do so. By creating terms for data storage consent, we are able to ethically store and use applicant data for our model.</p></li>
+										<li><b>Historical Data</b>
+										<p>Another potential ethical concern is the usage of historical data that may not accurately represent current home buyers. For example, the market for homes has exploded just recently and homes that one would be able to purchase possibly a year or two ago may not be feasible in today's market. Other historic events such as the housing market crash of 2008 demonstarte an extreme that may not accurately represent today's market. As a result historic data could inaccurately skew the model and provide inaccurate assessments limiting potetnial buyers from securing a loan.<br><br>The solution to this concern is through  proactively adjusting the model. First, by accounting for any outliers such as data from 2008, the model can weigh these datapoints less heavily than ones that are more recent. By including time as a factor in the model, newer more relevant data will have a stronger presence in the model.</p></li>
+								</ol>
+
+
+							</section>
+
+						<!-- Third Section -->
+							<section id="third" class="main">
+								<header class="major">
+									<h2>Data Analysis/Modeling Concerns</h2>
+
+								</header>
+								<ol>
+									<li><b>Unfair Thresholds</b>
+										<p>One potential ethical concern when modeling the data is unfair bias in model threshold. By modeling the data based on previous applicant data, the algorithm learns based on whether previous applicants where able to fully repay their loans. The issues arises however when the threshold of acceptable risk is skewed based on overqualified applicants. If the data is fed data from extremes such as multiple applicants with high levels of income, the threshold will be skewed higher even if it's not an accurate representaion of whether an applicant can afford to repay a morgatge.
+										<br><br>The solution to this problem is to properly adjust for any skewing through data science techniques such as preprocessing the data. In order to prevent any theoretical limit of what is an acceptable applicant, the model should also be built not 100% relying on historical data, but rather professional threshold calculated through fundamental economic and financial theory.</p></li>
+										<li><b>Indirect Bias</b>
+										<p>Another potential ethical concern are indirect bias from the data that is collected. In reality, many of the systems collected such as credit scores are at least biased in some degree. For example minorities who tend to have a lower trust of credit and banking systems may have lower credit scores, but do not necessarily mean they are incapable of repaying a home loan or an unreliable applicant. As a result, the factors that are collected may have systematic biases that are out of our control. <br><br>The solution would to implement out model so it looks for these outliers and to conduct further analysis to see if there may be more to the story. By making the model adaptable based on individual situations, we are able to make a more in depth judgement.</p></li>
+								</ol>
+							</section>
+
+							<!-- Fourth Section -->
+								<section id="fourth" class="main special">
+									<header class="major">
+										<h2>Algorithm Output</h2>
+									</header>
+									<p>
+										The <b>output</b> of the data science effort consists of two different interfaces depending on whether the user is an applicant or lender. For the lender, the dashboard will consist of the applicant's data along with relevant metrics such as their income, debt, credit scores, etc. Each metric will be on a scale showing where they fall compared to other historical applicants who have similar descriptive and quantitative qualities. Finally each of these metrics will have a risk score based on the model and there will be an overall score along with a recommendation on whether or not to approve the loan. At this point the lender can either decide to follow this recommendation or conduct further research regarding the applicant.
+
+										<br><br>For the applicant, the dashboard would have similar content in their dashboard as the lender, but with a few modifications. All the relevant metrics will still be present, but instead of a risk score it will be rebranded as a readiness score. Furthermore, instead of a recommendation of whether or not to approve a loan, the dashboard will rather break down their score and explain what is helping and what is hurting the applicant's chance of getting approved along with some tips on how to improve chances. In doing so, the model is essentially revealing it's weighting indirectly by teaching the applicant what lenders look for in applicants.
+									</p>
+
+									<ul class="features">
+										<li>
+											<span class="icon solid major style1 fa-briefcase"></span>
+											<h3>Lender</h3>
+											<p>The lender dashboard is focused on making an educated decision on applications</p>
+										</li>
+										<li>
+											<span class="icon solid major style3 fa-user"></span>
+											<h3>Applicant</h3>
+											<p>The applicant dashboard is focused on helping the applicant improve their chances of securing a loan</p>
+										</li>
+
+									</ul>
+								</section>
+
+								<!-- Fifth Section -->
+									<section id="fifth" class="main">
+										<header class="major">
+											<h2>Increased Justice</h2>
+
+										</header>
+										<ol>
+											<li><b>Financial Literacy</b>
+												<p>One way this model could increase justice is increasing financial literacy to first time home buyers. The process of buying a home is one that can be extremely daunting with many traps one can fall into. Often first time home buyers are at a disadvantage due to their lack of experience and can result in not being able to have a fair chance at securing a property. As a result, this AI system can explain to them what factors are important through a pre-screening and so that they are able to maximize their chances when applying for the loan. This results in increased justice as it makes home buying and securing a loan more accessible to all applicants and not just to applicants who may have purchased a home before and gone through the process.
+												</p></li>
+												<li><b>Transparency</b>
+												<p>Another way this model could result in increased justice is through greater transparency in how the home loan decision making process works. It has been show in many studies that home loan granting is a historically discriminating practice that often discriminated to people of color regardless of financial capability. Going further, mortgage companies have been shown to deny home loans which have associated with a home in a neighborhood with a high minority population. As a result, by keeping the process transparent and with a system that explains the effect of each factor on likelihood of securing the loan, there is an increased sense of transparency on why the home loan was either approved or denied.
+												</p></li>
+										</ol>
+									</section>
+
+									<!-- Sixth Section -->
+										<section id="sixth" class="main">
+											<header class="major">
+												<h2>Model Revision</h2>
+
+											</header>
+											<ol>
+												<li><b>Human Biases</b>
+													<p>One of the issues when using historic data to build a model is that the model contains any human biases that may indirectly come with the data. In this case, any previous home loans acted upon by human decision making is susceptible to human biases. As discussed previously, mortgage companies have been shown to deny home loans in neighborhoods with higher minority populations on average due to associatig them with higher risk. This historic issue of redlining has been proved to be a discriminating practice, but is still not completely gone. As a a result, the model may learn from data that is composed primarily from neighborhoods of low minority populations and begin negatively weighting minority neighborhoods. As a result, this would result in the need of revision in the model to account for any learned discriminatory practices.
+													<br><br>The solution to this would be to actively audit any decsions made by the model to proactively check for any signs of wrongdoing. There can also be changes made in the model which purposely skew the model features to account for any unfairness. Through this purposeful revision, the model will be able to avoid any of the human biases that may have been learned.</p></li>
+													<li><b>Goodhart's Law</b>
+													<p>Another issue that may arise is the model be susceptible to gaming on the applicant side since the model does indirectly reveal it's weighting of features. As discussed in the output stage, it can be shown which factors contribute to the final decision making process and as a result, the applicant may be able to artificially boost these metrics to game the system. As a result, while the model may think the applicant is qualified for the loan, in reality they simply altered their metrics in a way that is favorable to the model.<br><br>The solution to this would be to update the system and implement a anti-cheating system that would detect any changes if the applicant has used the platform before. If an applicant's metrics have changed dramaticly since their last usage of the platform, it could flag their application for further review by a human manually.</p></li>
+											</ol>
+										</section>
+
+										<section id="seventh" class="main special">
+											<header class="major">
+												<h2>Engineering Considerations</h2>
+											</header>
+											<p>
+												One important ethical consideration to make is to properly consider limitations when scaling the platform. While this platform could be very helpful in making informed decisions, if used without caution on a larger scale, the automation of decision making of treating people as simply a set of datapoints can lead to dissatisfaction. As a result, the model should be implemented in a way that positions itself as a tool for lenders rather than marketing itself as an all-inclusive system which makes the decisions on it's own. The only way to prevent this is through proper training, documentation, and engineering so that the platform itself provides the limitations needed in preventing this ethical diminishment of applicants. At the end of the day, purchasing a home is a huge decision and whether or not to grant a loan shouldn't be decided without second thought.
+											</p>
+
+										</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+
+						<p class="copyright">&copy; James Dai for PHIL 174 @ UCSD</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
